@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>BackupSchedule</title>
+</head>
+
+<body>
+    <div class="h-screen w-screen bg-dots"><!--Points container-->
+        <div class="h-screen mx-5 grid grid-cols-1 place-content-center gap-50">
+            <img src="assets/bs_logo.png" alt="BackupSchedule Logo" class="mx-auto">
+            <p class="text-center mb-4 text-bsPurple font-rubikSemiBold text-xs"><span class="px-2 bg-white border-bsPurple border-2 rounded-lg">Beta</span></p>
+            <div class="text-center grid grid-cols-1 gap-3 ">
+                <h1 style="line-height: 150%;" class="font-rubikBold text-4xl text-shadow text-bsGray">A new way to <span class="highlight-text-title">schedule</span> your <br> <span class="highlight-text-title">TimeMachine</span> Backups</h1>
+            </div>
+            <div          
+                class="grid grid-cols-1 sm:grid-cols-2 place-content-center mx-auto mt-16 gap-4 gap-x-6 bg-white p-4 rounded-3xl shadow-default">
+                <a href="https://google.de" target="_blank"
+                    class="w-48 h-10 rounded-2xl font-rubikSemiBold bg-black text-white text-center flex justify-center items-center hover:scale-105 hover:shadow-default transition-all ease-in-ou">
+                    <img class="mr-2 h-4" src="assets/icons/download_arrow.svg" alt="Download arrow">
+                    Download
+                </a>
+                <a href="https://google.de" target="_blank"
+                    class="w-48 h-10 rounded-2xl font-rubikSemiBold bg-white border-black border-3 text-center flex justify-center items-center hover:scale-105 hover:shadow-default transition-all ease-in-out">
+                    <img class="mr-2 h-4" src="assets/icons/github_mark.svg" alt="Github logo">
+                    Source code
+                </a>
+            </div>
+        </div>
+    </div>
+    <main class="max-w-2xl mx-auto"> <!--Outer gutter-->
+        <div class="mx-5"> <!--Inner gutter-->
+            <section>
+            <h2 class="font-rubikBold text-3xl mt-10 mb-5 text-shadow-light">Introducing <span
+                    class="highlight-text-title">BackupSchedule</span></h2>
+            <p class="font-rubikSemiBold mb-5">BackupSchedule is a lightweight application with a simplistic user
+                interface to schedule your TimeMachine Backups</p>
+            <div class="grid grid-cols-2 gap-3">
+                <img class="col-span-2 rounded-lg" src="assets/bs_main_screen.png" alt="Schedule Screen of BackupSchedule">
+                <img class="rounded-lg hidden sm:block" src="assets/menubar.png" alt="Menubar">
+                <div class="hidden sm:block"> <!--Desktop-->
+                    <img class="h-7 -rotate-45" src="assets/icons/link.svg" alt="Link">
+                    <p class="font-rubikSemiBold mb-5">Replaces default TimeMachine Menu Item</p>
+                    <img class="h-6 mt-3" src="assets/icons/stack.svg" alt="Stack">
+                    <p class="font-rubikSemiBold">Optimized for Intel and ARM <br>Works on macOS 10.13+</p>
+                </div>
+            </div>
+            </section>
+            <section class="grid grid-cols-1 sm:grid-cols-2 gap-3 my-8 pt-3 pb-5 border-y-2 stroke-gray-400"> <!--Features container-->
+                <div class="block sm:hidden mt-1">
+                    <img class="h-6 -rotate-45" src="assets/icons/link.svg" alt="Link">
+                    <p class="font-rubikSemiBold mt-1">Replaces default TimeMachine Menu Bar Item</p>
+                </div>
+                <div class="block sm:hidden mt-1">
+                    <img class="h-6" src="assets/icons/stack.svg" alt="Stack">
+                    <p class="font-rubikSemiBold mt-1">Optimized for Intel and ARM <br>Runs under macOS 10.13+</p>
+                </div>
+                <div>
+                    <img class="h-6" src="assets/icons/sparks.svg" alt="Sparks">
+                    <p class="font-rubikSemiBold mt-1">Easily select the days and the time the Backup should run</p>
+                </div>
+                <div class="mt-1">
+                    <img class="h-6" src="assets/icons/moon.svg" alt="Moon">
+                    <p class="font-rubikSemiBold mt-1">Automatically runs missed Backups after standby</p>
+                </div>
+                <div class="mt-1">
+                    <img class="h-6" src="assets/icons/message.svg" alt="Message">
+                    <p class="font-rubikSemiBold mt-1">Get a notification when a Backup begins or fails</p>
+                </div>
+                <div class="mt-1">
+                    <img class="h-6" src="assets/icons/arrows.svg" alt="Double arrows">
+                    <p class="font-rubikSemiBold mt-1">Choose if the Backup should run under high load or in battery mode</p>
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+</body>
+
+</html>

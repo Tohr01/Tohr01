@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Rubik-Medium';
+        font-weight: 400;
+        src: url(/fonts/Rubik-Medium.woff2) format('woff2');
+    }
+    @font-face {
+        font-family: 'Rubik-Semibold';
+        font-weight: 400;
+        src: url(/fonts/Rubik-SemiBold.woff2) format('woff2');
+    }
+    @font-face {
+        font-family: 'Rubik-Bold';
+        font-weight: 400;
+        src: url(/fonts/Rubik-Bold.woff2) format('woff2');
+    }
+    @font-face {
+        font-family: 'Rubik-Regular';
+        font-weight: 400;
+        src: url(/fonts/Rubik-Regular.woff2) format('woff2');
+    }
+}
+
+@layer components {
+    /* Animation rectangle style */
+    .anim-rect {
+        @apply w-12 h-12 border-mainPurpleSat border-8 rounded-2xl absolute opacity-10 dark:border-white
+    }
+
+    /* Shadow styles */
+    .text-shadow {
+        text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Heading styles */
+    h1 {
+        @apply text-center text-6xl font-rubikBold pt-14 dark:text-opacity-50 dark:text-white
+    }
+
+    h2 {
+        @apply text-center text-textGray dark:text-white text-3xl font-rubikBold py-5 dark:text-opacity-50
+    }
+
+    /* Profile section styles */
+    .social-icon {
+        @apply mx-auto w-10 grey-filter dark:white-filter opacity-60 dark:opacity-30 transition-all
+    }
+
+    /* Skill section styles */
+    .highlight-text-title {
+        @apply no-underline sm:underline underline-offset-8 text-bsGreen decoration-4 rounded-full
+    }
+
+    .skill-container {
+        @apply bg-[#F1F2F6] dark:bg-darkRectangle rounded-2xl place-content-center py-5 hover:scale-105 transition-all
+    }
+    .skill-icon-container {
+        @apply w-14 h-20 place-content-center mx-auto
+    }
+
+    .skill-icon {
+        @apply mx-auto black-filter dark:white-filter transition-all
+    }
+
+    .skill-name {
+        @apply text-center font-rubikMedium pt-3 text-2xl dark:text-white
+    }
+
+    .text-shadow-light {
+        text-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .bg-dots {
+        background-image: radial-gradient(circle at center, #e6e6e6 0.16rem, transparent 0);
+        background-size: 3rem 3rem;
+        background-position: 0 0, 0.65rem 0.65rem;
+    }
+
+    .bg-dots-dark {
+        background-image: radial-gradient(circle at center, #ffffff15 0.16rem, transparent 0);
+        background-size: 3rem 3rem;
+        background-position: 0 0, 0.65rem 0.65rem;
+    }
+
+    /* My projects section */
+    .project-container {
+        @apply h-52 bg-[#F1F2F6] dark:bg-darkRectangle rounded-2xl place-content-center overflow-hidden hover:scale-105 transition-all
+    }
+
+    .project-text-hover {
+        @apply absolute place-content-center backdrop-blur-md w-full h-full top-0 opacity-0 hover:opacity-100 transition-all z-10
+    }
+
+    .project-name {
+        @apply text-center font-rubikMedium text-xl pt-3 dark:text-white
+    }
+
+    .app-icon {
+        @apply w-20 mx-auto
+    }
+
+    .project-desc-text {
+        @apply text-center px-14 font-rubikSemiBold dark:text-white scale-125 group-hover:scale-100 transition-all
+    }
+
+    .project-lang-icon {
+        @apply mr-2 w-4 black-filter dark:white-filter
+    }
+
+
+    /* Filter  */
+    .grey-filter {
+        filter: brightness(0%) invert(53%) sepia(0%) saturate(217%) hue-rotate(233deg) brightness(98%) contrast(88%);
+        -webkit-filter: brightness(0%) invert(53%) sepia(0%) saturate(217%) hue-rotate(233deg) brightness(98%) contrast(88%);
+    }
+
+    .white-filter {
+        filter: brightness(0%) invert(100%) sepia(67%) saturate(1%) hue-rotate(278deg) brightness(104%) contrast(101%);
+        -webkit-filter: brightness(0%) invert(100%) sepia(67%) saturate(1%) hue-rotate(278deg) brightness(104%) contrast(101%);
+    }
+
+    .black-filter {
+        filter: brightness(0%) invert(0%) sepia(0%) saturate(29%) hue-rotate(121deg) brightness(92%) contrast(106%);
+        -webkit-filter: brightness(0%) invert(0%) sepia(0%) saturate(29%) hue-rotate(121deg) brightness(92%) contrast(106%);
+    }
+}
