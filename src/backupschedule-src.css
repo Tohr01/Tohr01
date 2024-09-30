@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Rubik-Medium';
+        font-weight: 400;
+        src: url(/fonts/Rubik-Medium.woff2) format('woff2');
+    }
+    @font-face {
+        font-family: 'Rubik-Semibold';
+        font-weight: 400;
+        src: url(/fonts/Rubik-SemiBold.woff2) format('woff2');
+    }
+    @font-face {
+        font-family: 'Rubik-Bold';
+        font-weight: 400;
+        src: url(/fonts/Rubik-Bold.woff2) format('woff2');
+    }
+    @font-face {
+        font-family: 'Rubik-Regular';
+        font-weight: 400;
+        src: url(/fonts/Rubik-Regular.woff2) format('woff2');
+    }
+}
+
+@layer components {
+    /* Animation rectangle style */
+    .anim-rect {
+        @apply w-12 h-12 border-mainPurpleSat border-8 rounded-2xl absolute opacity-10 dark:border-white
+    }
+
+    /* Shadow styles */
+    .text-shadow {
+        text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .text-shadow-light {
+        text-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .bg-dots {
+        background-image: radial-gradient(circle at center, #e6e6e6 0.16rem, transparent 0);
+        background-size: 3rem 3rem;
+        background-position: 0 0, 0.65rem 0.65rem;
+    }
+}

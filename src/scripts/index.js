@@ -156,13 +156,9 @@ function initAnimations() {
 }
 
 // Modifies animated rects on mouse movement if clientX/Y is in pointsContainerBbox
-var last_mouse_x;
-var last_mouse_y;
 window.addEventListener('mousemove', (e) => {
     const newX = e.clientX;
-    last_mouse_x = newX;
     const newY = e.clientY;
-    last_mouse_y = newY;
     const pointsContainerBbox = pointsContainer.getBoundingClientRect();
     if (document.querySelectorAll('.anim-rect').length == 0 || !interceptsElem(newX, newY, pointsContainerBbox.x, pointsContainerBbox.y, pointsContainerBbox.right, pointsContainerBbox.bottom)) {
         return;
@@ -171,7 +167,6 @@ window.addEventListener('mousemove', (e) => {
     let distMax = 0;
     let distMin = Infinity;
 
-    let centerDists = [];
     for (let i = 0; i < animationRects.length; i++) {
         const rectBbox = animationRects[i].getBoundingClientRect();
         const xDiff = newX - rectBbox.x;
@@ -211,22 +206,9 @@ function respawnRects() {
     });
 }
 
+// On rezize respawn rects in order to match new window res
 var timeout_id;
 window.addEventListener('resize', () => {
     clearTimeout(timeout_id);
     timeout_id = setTimeout(respawnRects, 1000);
 });
-
-function moveRects() {
-    
-    if (last_mouse_x !== undefined && last_mouse_y !== undefined) {
-        animationRects.forEach(rect => {
-            const rect_bbox = rect.getBoundingClientRect();
-            let directionVec = [last_mouse_x-rect_bbox.x,last_mouse_y-rect_bbox.y];
-            const dist = eucDist(directionVec[0], directionVec[1]);
-            directionVec = directionVec.map(e => e/dist);
-        });
-    }
-}
-
-setInterval(moveRects, MOVERECT_INTERVAL_MS);

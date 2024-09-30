@@ -42,12 +42,12 @@
     }
 
     h2 {
-        @apply text-center text-textGray dark:text-white text-3xl font-rubikBold py-5 dark:text-opacity-50
+        @apply text-center text-textGray dark:text-white text-3xl font-rubikBold py-5 dark:text-opacity-50;
     }
 
     /* Profile section styles */
     .social-icon {
-        @apply mx-auto w-10 grey-filter dark:white-filter opacity-60 dark:opacity-30 transition-all
+        @apply mx-auto w-10 grey-filter dark:white-filter opacity-60 dark:opacity-30 hover:scale-110 transition-all
     }
 
     /* Skill section styles */
@@ -96,7 +96,7 @@
     }
 
     .project-name {
-        @apply text-center font-rubikMedium text-xl pt-3 dark:text-white
+        @apply text-center font-rubikMedium text-2xl pt-3 dark:text-white
     }
 
     .app-icon {
