@@ -35,6 +35,9 @@ module.exports = {
       },
       borderWidth: {
         '3': '3px'
+      },
+      textDecorationThickness: {
+        '6': '6px'
       }
     },
   }

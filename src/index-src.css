@@ -38,7 +38,7 @@
 
     /* Heading styles */
     h1 {
-        @apply text-center text-6xl font-rubikBold pt-14 dark:text-opacity-50 dark:text-white
+        @apply text-center text-6xl font-rubikBold pt-20 lg:pt-32 dark:text-opacity-50 dark:text-white
     }
 
     h2 {
@@ -92,7 +92,7 @@
     }
 
     .project-text-hover {
-        @apply absolute place-content-center backdrop-blur-md w-full h-full top-0 opacity-0 hover:opacity-100 transition-all z-10
+        @apply absolute place-content-center backdrop-blur-lg w-full h-full top-0 opacity-0 hover:opacity-100 transition-all z-10
     }
 
     .project-name {

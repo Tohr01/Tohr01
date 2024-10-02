@@ -31,6 +31,26 @@
         @apply w-12 h-12 border-mainPurpleSat border-8 rounded-2xl absolute opacity-10 dark:border-white
     }
 
+    .highlight-text-title {
+        @apply text-bsGreen underline decoration-6
+    }
+    
+    p {
+        @apply text-2xl font-rubikMedium
+    }
+
+    .feat-container {
+        @apply flex flex-col sm:flex-row
+    }
+
+    .feat-text {
+        @apply mt-1 text-center sm:text-left px-10 sm:px-0
+    }
+
+    .feat-icon {
+        @apply h-10 mx-auto sm:ml-0 bs-green-filter sm:mr-2 my-auto
+    }
+
     /* Shadow styles */
     .text-shadow {
         text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
@@ -44,5 +64,10 @@
         background-image: radial-gradient(circle at center, #e6e6e6 0.16rem, transparent 0);
         background-size: 3rem 3rem;
         background-position: 0 0, 0.65rem 0.65rem;
+    }
+
+    /* Filters */
+    .bs-green-filter {
+        filter: brightness(0%) invert(44%) sepia(31%) saturate(620%) hue-rotate(125deg) brightness(92%) contrast(86%);
     }
 }
