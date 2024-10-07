@@ -15,6 +15,20 @@ gsap.from(portrait, {
 });
 
 /*
+Bg-dots scroll hide
+*/
+const bgDots = document.getElementById('bg-dots');
+gsap.to(bgDots, {
+    duration: 1,
+    scrollTrigger: {
+        scrub: 1,
+        end: '+=500',
+        trigger: portrait
+    },
+    opacity: 0
+});
+
+/*
 cr.codes title animation
  */
 SplitType.create('#codes-title');

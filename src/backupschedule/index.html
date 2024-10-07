@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="backupschedule-dist.css">
+    <link rel="stylesheet" href="index-dist.css">
     <title>BackupSchedule</title>
 </head>
 
 <body>
+
     <div class="h-screen w-screen bg-dots"><!--Points container-->
+        <iframe class="absolute bs-green-filter" src="/templates/navigation.html" frameborder="0"></iframe><!--Navigation-->
         <div class="h-screen mx-5 grid grid-cols-1 place-content-center gap-50">
-            <img src="assets/bs_logo.png" alt="BackupSchedule Logo" class="mx-auto">
+            <img src="/assets/bs_logo.png" alt="BackupSchedule Logo" class="mx-auto">
             <p class="text-center mb-4 text-bsPurple font-rubikSemiBold text-base"><span
                     class="px-3 bg-white border-bsPurple border-2 rounded-full">Beta</span></p>
             <div class="text-center grid grid-cols-1 gap-3 ">
@@ -24,12 +26,12 @@
                 class="grid grid-cols-1 sm:grid-cols-2 place-content-center mx-auto mt-16 gap-4 gap-x-6 bg-white p-4 rounded-3xl shadow-default">
                 <a href="https://google.de" target="_blank"
                     class="text-lg w-48 h-12 rounded-2xl font-rubikSemiBold bg-black text-white text-center flex justify-center items-center hover:scale-105 hover:shadow-default transition-all ease-in-out">
-                    <img class="mr-2 h-5" src="assets/icons/download_arrow.svg" alt="Download arrow">
+                    <img class="mr-2 h-5" src="/assets/icons/download_arrow.svg" alt="Download arrow">
                     Download
                 </a>
                 <a href="https://google.de" target="_blank"
                     class="text-lg w-48 h-12 rounded-2xl font-rubikSemiBold bg-white border-black border-3 text-center flex justify-center items-center hover:scale-105 hover:shadow-default transition-all ease-in-out">
-                    <img class="mr-2 h-5" src="assets/icons/github_mark.svg" alt="Github logo">
+                    <img class="mr-2 h-5" src="/assets/icons/github_mark.svg" alt="Github logo">
                     Source code
                 </a>
             </div>
@@ -43,16 +45,16 @@
                 <p class="mb-5 text-center">BackupSchedule is a lightweight application with a simplistic user
                     interface to schedule your TimeMachine Backups</p>
                 <div class="grid grid-cols-2 gap-3">
-                    <img class="col-span-2 rounded-lg" src="assets/bs_main_screen.png"
+                    <img class="col-span-2 rounded-lg" src="/assets/bs_main_screen.png"
                         alt="Schedule Screen of BackupSchedule">
-                    <img class="rounded-lg hidden sm:block" src="assets/menubar.png" alt="Menubar">
+                    <img class="rounded-lg hidden sm:block" src="/assets/menubar.png" alt="Menubar">
                     <div class="hidden sm:block place-content-center"> <!--Desktop-->
                         <div class="feat-container mb-4">
-                            <img class="feat-icon -rotate-45" src="assets/icons/link.svg" alt="Link">
+                            <img class="feat-icon -rotate-45" src="/assets/icons/link.svg" alt="Link">
                             <p class="feat-text">Replaces default TimeMachine Menu Item</p>
                         </div>
                         <div class="feat-container">
-                            <img class="feat-icon mt-5" src="assets/icons/stack.svg" alt="Stack">
+                            <img class="feat-icon mt-5" src="/assets/icons/stack.svg" alt="Stack">
                             <p class="feat-text">Optimized for Intel and ARM <br>Works on macOS 10.13+</p>
                         </div>
                     </div>
@@ -61,27 +63,27 @@
             <section class="grid grid-cols-1 sm:grid-cols-2 gap-3 my-8 pt-3 pb-5 border-y-2 stroke-gray-400">
                 <!--Features container-->
                 <div class="feat-container block sm:hidden mt-1">
-                    <img class="feat-icon -rotate-45" src="assets/icons/link.svg" alt="Link">
+                    <img class="feat-icon -rotate-45" src="/assets/icons/link.svg" alt="Link">
                     <p class="feat-text">Replaces default TimeMachine Menu Bar Item</p>
                 </div>
                 <div class="feat-container block sm:hidden mt-1">
-                    <img class="feat-icon" src="assets/icons/stack.svg" alt="Stack">
+                    <img class="feat-icon" src="/assets/icons/stack.svg" alt="Stack">
                     <p class="feat-text">Optimized for Intel and ARM <br>Runs under macOS 10.13+</p>
                 </div>
                 <div class="feat-container">
-                    <img class="feat-icon" src="assets/icons/sparks.svg" alt="Sparks">
+                    <img class="feat-icon" src="/assets/icons/sparks.svg" alt="Sparks">
                     <p class="feat-text">Easily select the days and the time the Backup should run</p>
                 </div>
                 <div class="feat-container mt-1">
-                    <img class="feat-icon" src="assets/icons/moon.svg" alt="Moon">
+                    <img class="feat-icon" src="/assets/icons/moon.svg" alt="Moon">
                     <p class="feat-text">Automatically runs missed Backups after standby</p>
                 </div>
                 <div class="feat-container mt-1">
-                    <img class="feat-icon" src="assets/icons/message.svg" alt="Message">
+                    <img class="feat-icon" src="/assets/icons/message.svg" alt="Message">
                     <p class="feat-text">Get a notification when a Backup begins or fails</p>
                 </div>
                 <div class="feat-container mt-1">
-                    <img class="feat-icon" src="assets/icons/arrows.svg" alt="Double arrows">
+                    <img class="feat-icon" src="/assets/icons/arrows.svg" alt="Double arrows">
                     <p class="feat-text">Choose if backups should run under high load or on battery
                     </p>
                 </div>

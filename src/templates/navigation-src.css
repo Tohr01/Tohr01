@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Rubik-Medium';
+        font-weight: 400;
+        src: url(/fonts/Rubik-Medium.woff2) format('woff2');
+    }
+    @font-face {
+        font-family: 'Rubik-Semibold';
+        font-weight: 400;
+        src: url(/fonts/Rubik-SemiBold.woff2) format('woff2');
+    }
+    @font-face {
+        font-family: 'Rubik-Bold';
+        font-weight: 400;
+        src: url(/fonts/Rubik-Bold.woff2) format('woff2');
+    }
+    @font-face {
+        font-family: 'Rubik-Regular';
+        font-weight: 400;
+        src: url(/fonts/Rubik-Regular.woff2) format('woff2');
+    }
+}
+
+@layer components {
+    /* Animation rectangle style */
+    .anim-rect {
+        @apply w-12 h-12 border-mainPurple border-8 rounded-2xl
+    }
+    
+    .nav-text {
+        @apply text-mainPurple font-rubikSemiBold text-2xl my-auto hover:underline decoration-2 mr-10
+    }
+}

@@ -16,7 +16,7 @@
 <body class="dark:bg-darkModeBgDark">
    <div class="h-screen w-screen relative" id="points-container">
       <!--Points container-->
-      <div class="absolute bg-dots dark:bg-dots-dark -z-20 w-full h-full"></div>
+      <div class="absolute bg-dots dark:bg-dots-dark -z-20 w-full h-full" id="bg-dots"></div>
       <div class="h-screen mx-5 grid grid-cols-1 place-content-center">
          <!--Rect safe area-->
          <div class="relative m-auto" style="border-radius: 100px;" id="title-container">
@@ -119,54 +119,61 @@
             </div>
          </div>
       </section>
-      <section>
+      <section id="my-projects">
          <!--Projects section-->
          <h1>My <span class="text-mainPurpleDark dark:text-white" id="my-projects">Projects</span>
          </h1>
          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-row pt-14 gap-5">
-            <a href="backupschedule.html" target="_self" class="relative group project-container">
+            <a href="backupschedule/index.html" target="_self" class="relative group project-container">
                <div class="project-text-hover">
                   <p class="project-desc-text">
-                     An application allowing finegrained custom scheduling of Time Machine Backups and some other useful Time Machine utilities
+                     An application allowing finegrained custom scheduling of Time Machine Backups and some other useful
+                     Time Machine utilities
                   </p>
                </div>
-               <img src="assets/icons/backup_schedule_icon.png" alt="Backup schedule icon" class="app-icon">
-               <p class="project-name">BackupSchedule</p>
-               <div class="flex items-center justify-center pt-2">
-                  <img src="assets/icons/swift_icon.svg" alt="Swift icon" class="project-lang-icon">
-                  <p class="dark:text-white">•</p>
-                  <p class="ml-2 font-rubikMedium dark:text-white">macOS</p>
+               <div class="group-hover:opacity-50">
+                  <img src="assets/icons/backup_schedule_icon.png" alt="Backup schedule icon" class="app-icon">
+                  <p class="project-name">BackupSchedule</p>
+                  <div class="flex items-center justify-center pt-2">
+                     <img src="assets/icons/swift_icon.svg" alt="Swift icon" class="project-lang-icon">
+                     <p class="dark:text-white">•</p>
+                     <p class="ml-2 font-rubikMedium dark:text-white">macOS</p>
+                  </div>
                </div>
             </a>
             <a href="https://github.com/Tohr01/PassWord" target="_self" class="relative group project-container">
                <div class="project-text-hover">
                   <p class="project-desc-text">
-                     This project aims to restore the memorable password feature removed from Keychain Access in macOS 10.15
+                     This project aims to restore the memorable password feature removed from Keychain Access in macOS
+                     10.15
+               </div>
+               <div class="group-hover:opacity-50">
+                  <img src="assets/icons/password_app_icon.png" alt="Placeholder app icon" class="app-icon">
+                  <p class="project-name">PassWord</p>
+                  <div class="flex items-center justify-center pt-2">
+                     <img src="assets/icons/swift_icon.svg" alt="HTML icon" class="project-lang-icon">
+                     <p class="dark:text-white">•</p>
+                     <p class="ml-2 font-rubikMedium dark:text-white">macOS</p>
                   </div>
-               <img src="assets/icons/password_app_icon.png" alt="Placeholder app icon" class="app-icon">
-               <p class="project-name">PassWord</p>
-               <div class="flex items-center justify-center pt-2">
-                  <img src="assets/icons/swift_icon.svg" alt="HTML icon" class="project-lang-icon">
-                  <p class="dark:text-white">•</p>
-                  <p class="ml-2 font-rubikMedium dark:text-white">macOS</p>
                </div>
             </a>
             <a href="https://pixeldogs.de/jupdf/" target="_self" class="relative group project-container">
                <div class="project-text-hover">
                   <p class="project-desc-text">
-                     Lorem ipsum dolor sit, amet
-                     consectetur adipisicing elit. Numquam tenetur voluptas ratione et
+                     Upload your Jupyter Notebooks and JuPDF converts them to one long single page PDF
                   </p>
                </div>
-               <img src="assets/icons/placeholder_app_icon.png" alt="Placeholder app icon" class="app-icon">
-               <p class="project-name">JuPDF</p>
-               <div class="flex items-center justify-center pt-2">
-                  <img src="assets/icons/html_icon.svg" alt="HTML icon" class="project-lang-icon">
-                  <img src="assets/icons/javascript_logo.svg" alt="Javascript icon" class="project-lang-icon">
-                  <img src="assets/icons/tailwind_icon.svg" alt="Tailwind icon" class="project-lang-icon">
-                  <img src="assets/icons/python_logo.svg" alt="Python icon" class="project-lang-icon">
-                  <p class="dark:text-white">•</p>
-                  <p class="ml-2 font-rubikMedium dark:text-white">Web App</p>
+               <div class="group-hover:opacity-50">
+                  <img src="assets/icons/placeholder_app_icon.png" alt="Placeholder app icon" class="app-icon">
+                  <p class="project-name">JuPDF</p>
+                  <div class="flex items-center justify-center pt-2">
+                     <img src="assets/icons/html_icon.svg" alt="HTML icon" class="project-lang-icon">
+                     <img src="assets/icons/javascript_logo.svg" alt="Javascript icon" class="project-lang-icon">
+                     <img src="assets/icons/tailwind_icon.svg" alt="Tailwind icon" class="project-lang-icon">
+                     <img src="assets/icons/python_logo.svg" alt="Python icon" class="project-lang-icon">
+                     <p class="dark:text-white">•</p>
+                     <p class="ml-2 font-rubikMedium dark:text-white">Web App</p>
+                  </div>
                </div>
             </a>
          </div>
@@ -180,15 +187,21 @@
          <!--My certs/awards-->
          <h1 class="pt-32">My <span class="text-mainPurpleDark dark:text-white" id="my-certs"> Awards</span></h1>
          <div class="pt-14 grid grid-cols-1 grid-rows-1">
-            <a href="" class="bg-rectangle dark:bg-darkRectangle rounded-2xl flex flex-col lg:flex-row p-10 group hover:scale-105 transition-all relative overflow-hidden">
-               <div href="" class="absolute bottom-0 right-0 w-20 h-20 bg-mainPurple dark:bg-white rounded-tl-full place-content-center">
-                  <p class="text-center font-rubikBold text-rectangle dark:text-darkRectangle translate-x-2 translate-y-2">PDF</p>
+            <a href="assets/jugend_forscht_certs.pdf" target="_blank"
+               class="bg-rectangle dark:bg-darkRectangle rounded-2xl flex flex-col lg:flex-row p-10 group hover:scale-105 transition-all relative overflow-hidden">
+               <div href=""
+                  class="absolute bottom-0 right-0 w-20 h-20 bg-mainPurple dark:bg-white rounded-tl-full place-content-center">
+                  <p
+                     class="text-center font-rubikBold text-rectangle dark:text-darkRectangle translate-x-2 translate-y-2">
+                     PDF</p>
                </div>
-               <img class="w-24 lg:mr-10 black-filter dark:white-filter group-hover:filter-none transition-all pb-8 lg:pb-0 mx-auto" src="assets/icons/jugend_forscht.svg" alt="JugendForscht Logo">
+               <img
+                  class="w-24 lg:mr-10 black-filter dark:white-filter group-hover:filter-none transition-all pb-8 lg:pb-0 mx-auto"
+                  src="assets/icons/jugend_forscht.svg" alt="JugendForscht Logo">
                <div class="place-content-center text-center lg:text-left">
                   <p class="font-rubikMedium text-2xl dark:text-white pb-3">JugendForscht</p>
                   <p class="font-rubik dark:text-white text-2xl">
-                     As part of JugendForscht 2019, I have developed a quiz app for digital education. 
+                     As part of JugendForscht 2019, I have developed a quiz app for digital education.
                      I won both the regional regional and state competition.
                      I also received the special prize from the Hamburg school senator.</p>
                </div>
@@ -198,8 +211,8 @@
       <footer class="py-12 max-w-5xl mx-auto">
          <div
             class="grid grid-rows-2 mx-auto text-center font-rubikBold text-xl pt-5 dark:text-white dark:text-opacity-50">
-            <a id="mail"
-               class="text-mainPurpleDark font-rubikBold text-center text-2xl dark:text-white pb-5">Please enable JavaScript to see the email address
+            <a id="mail" class="text-mainPurpleDark font-rubikBold text-center text-2xl dark:text-white pb-5">Please
+               enable JavaScript to see the email address
             </a>
             <a href="" class="opacity-25">imprint</a>
          </div>

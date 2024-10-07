@@ -6,22 +6,22 @@
     @font-face {
         font-family: 'Rubik-Medium';
         font-weight: 400;
-        src: url(/fonts/Rubik-Medium.woff2) format('woff2');
+        src: url(./fonts/Rubik-Medium.woff2) format('woff2');
     }
     @font-face {
         font-family: 'Rubik-Semibold';
         font-weight: 400;
-        src: url(/fonts/Rubik-SemiBold.woff2) format('woff2');
+        src: url(./fonts/Rubik-SemiBold.woff2) format('woff2');
     }
     @font-face {
         font-family: 'Rubik-Bold';
         font-weight: 400;
-        src: url(/fonts/Rubik-Bold.woff2) format('woff2');
+        src: url(./fonts/Rubik-Bold.woff2) format('woff2');
     }
     @font-face {
         font-family: 'Rubik-Regular';
         font-weight: 400;
-        src: url(/fonts/Rubik-Regular.woff2) format('woff2');
+        src: url(./fonts/Rubik-Regular.woff2) format('woff2');
     }
 }
 
