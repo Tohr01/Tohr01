@@ -10,6 +10,7 @@ module.exports = {
         rubik: ['Rubik-Regular', 'sans-serif']
       },
       colors: {
+        // BackupSchedule
         'bsGreen': '#3C817A',
         'bsGray': '#2F4146',
         'bsPurple': '#9b59b6',
