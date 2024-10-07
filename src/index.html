@@ -16,14 +16,17 @@
 <body class="dark:bg-darkModeBgDark">
    <div class="h-screen w-screen relative" id="points-container">
       <!--Points container-->
-      <div class="absolute bg-dots dark:bg-dots-dark -z-20 w-full h-full" id="bg-dots"></div>
+      <div class="absolute bg-dots dark:bg-dots-dark -z-20 w-full h-full" id="bg-dots">
+         <img class="absolute place-content-center w-10 bottom-10 left-1/2 -translate-x-1/2 opacity-50 animate-bounce purple-sat-filter dark:white-filter"
+            src="assets/icons/download_arrow.svg" alt="Scroll down arrow">
+      </div>
       <div class="h-screen mx-5 grid grid-cols-1 place-content-center">
          <!--Rect safe area-->
          <div class="relative m-auto" style="border-radius: 100px;" id="title-container">
             <div
                class="absolute m-auto bg-white w-full h-full blur-3xl -z-20 rounded-full opacity-70 dark:bg-darkModeBg dark:opacity-10">
             </div>
-            <p class="m-auto text-6xl md:text-7xl lg:text-8xl  text-mainPurple dark:text-white text-center font-rubikBold text-shadow px-15 py-20"
+            <p class="m-auto text-6xl md:text-7xl lg:text-8xl text-mainPurple dark:text-white text-center font-rubikBold text-shadow px-15 py-20"
                id="codes-title">
                cr.codes
             </p>
@@ -60,10 +63,10 @@
             </div>
             <h1>Hi, I'm <span class="text-mainPurpleDark dark:text-white">Carl</span> <span
                   class="text-opacity-100 text-white" id="wave">👋</span></h1>
-            <h2><span class="text-mainPurple dark:text-white">UI/UX
+            <h1 class="text-3xl py-5"><span class="text-mainPurple dark:text-white">UI/UX
                   Designer</span> and
                <span class="text-mainPurple dark:text-white">Software Developer</span> from Hamburg
-            </h2>
+            </h1>
             <p class="font-rubikRegular text-textGray dark:text-white text-2xl text-center">
                I realised one thing relatively early on: Good design does not work without good
                programming and vice versa. I am currently studying <a

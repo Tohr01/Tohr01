@@ -31,6 +31,8 @@
         @apply w-12 h-12 border-mainPurpleSat border-8 rounded-2xl absolute opacity-10 dark:border-white
     }
 
+
+
     /* Shadow styles */
     .text-shadow {
         text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
@@ -126,5 +128,10 @@
     .black-filter {
         filter: brightness(0%) invert(0%) sepia(0%) saturate(29%) hue-rotate(121deg) brightness(92%) contrast(106%);
         -webkit-filter: brightness(0%) invert(0%) sepia(0%) saturate(29%) hue-rotate(121deg) brightness(92%) contrast(106%);
+    }
+
+    .purple-sat-filter {
+        filter: brightness(0) saturate(100%) invert(55%) sepia(15%) saturate(948%) hue-rotate(199deg) brightness(97%) contrast(93%);
+        -webkit-filter: brightness(0) saturate(100%) invert(55%) sepia(15%) saturate(948%) hue-rotate(199deg) brightness(97%) contrast(93%);
     }
 }
