@@ -6,28 +6,36 @@
     @font-face {
         font-family: 'Rubik-Medium';
         font-weight: 400;
-        src: url(./fonts/Rubik-Medium.woff2) format('woff2');
+        src: url(/fonts/Rubik-Medium.woff2) format('woff2');
     }
     @font-face {
         font-family: 'Rubik-Semibold';
         font-weight: 400;
-        src: url(./fonts/Rubik-SemiBold.woff2) format('woff2');
+        src: url(/fonts/Rubik-SemiBold.woff2) format('woff2');
     }
     @font-face {
         font-family: 'Rubik-Bold';
         font-weight: 400;
-        src: url(./fonts/Rubik-Bold.woff2) format('woff2');
+        src: url(/fonts/Rubik-Bold.woff2) format('woff2');
     }
     @font-face {
         font-family: 'Rubik-Regular';
         font-weight: 400;
-        src: url(./fonts/Rubik-Regular.woff2) format('woff2');
+        src: url(/fonts/Rubik-Regular.woff2) format('woff2');
     }
 }
 
 @layer components {
+    h1 {
+        @apply font-rubikBold text-4xl sm:text-5xl md:text-6xl text-shadow text-bsGray
+    }
+
+    h2 {
+        @apply font-rubikBold text-3xl sm:text-4xl md:text-5xl mt-10 mb-5 text-shadow-light text-center
+    }
+
     .highlight-text-title {
-        @apply text-bsGreen underline decoration-6
+        @apply text-bsGreen underline decoration-4 sm:decoration-6
     }
     
     p {

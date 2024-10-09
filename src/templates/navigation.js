@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
         repeat: -1
     });
 
+    if (isTouchDevice()) return;
+
     const navTexts = document.querySelectorAll('.nav-text');
     // Setup initial navText states
     navTexts.forEach(navText => {
@@ -16,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navText.hidden = true;
         
         navText.style.transform = "translateY(20px)";
-    })
+    });
 
     const navContainer = document.getElementById('nav-container');
     navContainer.addEventListener('mouseenter', () => {
@@ -57,3 +59,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// Taken from https://stackoverflow.com/a/4819886
+function isTouchDevice() {
+    return (('ontouchstart' in window) ||
+       (navigator.maxTouchPoints > 0) ||
+       (navigator.msMaxTouchPoints > 0));
+}

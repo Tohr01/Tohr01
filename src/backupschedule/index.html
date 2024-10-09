@@ -10,16 +10,15 @@
 
 <body>
 
-    <div class="h-screen w-screen bg-dots"><!--Points container-->
-        <iframe class="absolute bs-green-filter" src="/templates/navigation.html" frameborder="0"></iframe><!--Navigation-->
-        <img class="absolute place-content-center w-10 bottom-10 left-1/2 -translate-x-1/2 animate-bounce bs-green-filter opacity-50"
-        src="/assets/icons/download_arrow.svg" alt="Scroll down arrow"><!--Bouncing arrow-->
-        <div class="h-screen mx-5 grid grid-cols-1 place-content-center gap-50">
+    <div class="min-h-screen w-screen bg-dots"><!--Points container-->
+        <iframe class="absolute bs-green-filter w-full" src="/templates/navigation.html"
+            frameborder="0"></iframe><!--Navigation-->
+        <div class="h-full py-32 mx-5 grid grid-cols-1 place-content-center gap-50">
             <img src="/assets/bs_logo.png" alt="BackupSchedule Logo" class="mx-auto">
             <p class="text-center mb-4 text-bsPurple font-rubikSemiBold text-base"><span
                     class="px-3 bg-white border-bsPurple border-2 rounded-full">Beta</span></p>
             <div class="text-center grid grid-cols-1 gap-3">
-                <h1 style="line-height: 150%;" class="font-rubikBold text-6xl text-shadow text-bsGray">A new way to
+                <h1 style="line-height: 150%;">A new way to
                     <span class="highlight-text-title">schedule</span> your <br> <span
                         class="highlight-text-title">TimeMachine</span> Backups
                 </h1>
@@ -37,12 +36,16 @@
                     Source code
                 </a>
             </div>
+
         </div>
+
+        <img class="absolute place-content-center w-10 bottom-2 left-1/2 -translate-x-1/2 animate-bounce bs-green-filter opacity-50 hidden sm:visible"
+        src="/assets/icons/download_arrow.svg" alt="Scroll down arrow"><!--Bouncing arrow-->
     </div>
     <main class="max-w-4xl mx-auto"> <!--Outer gutter-->
         <div class="mx-5"> <!--Inner gutter-->
             <section>
-                <h2 class="font-rubikBold text-5xl mt-10 mb-5 text-shadow-light text-center">Introducing <span
+                <h2>Introducing <span
                         class="highlight-text-title">BackupSchedule</span></h2>
                 <p class="mb-5 text-center">BackupSchedule is a lightweight application with a simplistic user
                     interface to schedule your TimeMachine Backups</p>
