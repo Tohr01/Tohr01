@@ -1,226 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="index-dist.css">
-   <title>cr.codes</title>
-   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-   <script src="https://unpkg.com/split-type"></script>
-   <script src="scripts/index.js" defer></script>
-   <script src="scripts/email.js"></script>
-</head>
-
-<body class="dark:bg-darkModeBgDark">
-   <div class="h-screen w-screen relative" id="points-container">
-      <!--Points container-->
-      <div class="absolute bg-dots dark:bg-dots-dark -z-20 w-full h-full" id="bg-dots">
-         <img class="absolute place-content-center w-10 bottom-10 left-1/2 -translate-x-1/2 opacity-50 animate-bounce purple-sat-filter dark:white-filter"
-            src="assets/icons/download_arrow.svg" alt="Scroll down arrow">
-      </div>
-      <div class="h-screen mx-5 grid grid-cols-1 place-content-center">
-         <!--Rect safe area-->
-         <div class="relative m-auto" style="border-radius: 100px;" id="title-container">
-            <div
-               class="absolute m-auto bg-white w-full h-full blur-3xl -z-20 rounded-full opacity-70 dark:bg-darkModeBg dark:opacity-10">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index-dist.css">
+        <title>cr.codes</title>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <script src="https://unpkg.com/split-type"></script>
+        <script src="scripts/index.js" defer></script>
+        <script src="scripts/email.js"></script>
+    </head>
+    <body class="dark:bg-darkModeBgDark">
+        <div class="h-screen w-screen relative" id="points-container">
+            <!--Points container-->
+            <div class="absolute bg-dots dark:bg-dots-dark -z-20 w-full h-full" id="bg-dots">
+                <img class="absolute place-content-center w-10 bottom-10 left-1/2 -translate-x-1/2 opacity-50 animate-bounce purple-sat-filter dark:white-filter" src="assets/icons/download_arrow.svg" alt="Scroll down arrow">
             </div>
-            <p class="m-auto text-6xl md:text-7xl lg:text-8xl text-mainPurple dark:text-white text-center font-rubikBold text-shadow px-15 py-20"
-               id="codes-title">
-               cr.codes
-            </p>
-         </div>
-      </div>
-   </div>
-   <main class="max-w-6xl mx-auto px-10">
-      <!--Main outer gutter-->
-      <section id="profile-sec">
-         <!--Profile section-->
-         <div>
-            <div class="relative mx-auto w-80 pt-14">
-               <div class="absolute bg-mainPurpleDark dark:bg-darkModeBg opacity-30 h-52 w-full bottom-0 -z-20 blur-3xl"
-                  id="portrait-bg">
-               </div>
-               <div class="relative overflow-hidden"
-                  style="border-bottom-left-radius: 104px; border-bottom-right-radius: 104px;">
-                  <div class="absolute bg-mainPurpleDark dark:bg-white opacity-10 w-full h-52 bottom-0 -z-10"
-                     style="border-radius: 104px;"></div>
-                  <img id="portrait" src="assets/carl_portrait.png" alt="Carl Portrait">
-               </div>
+            <div class="h-screen mx-5 grid grid-cols-1 place-content-center">
+                <!--Rect safe area-->
+                <div class="relative m-auto" style="border-radius: 100px;" id="title-container">
+                    <div class="absolute m-auto bg-white w-full h-full blur-3xl -z-20 rounded-full opacity-70 dark:bg-darkModeBg dark:opacity-10"></div>
+                    <p class="m-auto text-6xl md:text-7xl lg:text-8xl text-mainPurple dark:text-white text-center font-rubikBold text-shadow px-15 py-20" id="codes-title">
+                        cr.codes
+                    </p>
+                </div>
             </div>
-            <div class="grid col-span-3 grid-flow-col row-span-1 w-44 mx-auto pt-14 gap-3">
-               <!--Icons-->
-               <a id="social-icon" href="https://github.com/Tohr01" target="_blank"><img
-                     src="assets/icons/github_mark_app.svg" alt="Github Logo"
-                     class="social-icon dark:hover:white-filter hover:black-filter hover:opacity-100"></a>
-               <a id="social-icon" href="https://www.linkedin.com/in/carl-raabe-922aaa250/" target="_blank"><img
-                     src="assets/icons/linkedin_icon.svg" alt=""
-                     class="social-icon hover:dark:white-filter hover:black-filter hover:opacity-100"></a>
-               <a id="social-icon" href="https://www.youtube.com/channel/UCNzGXn20hRdyVwUFZw5Mf0w" target="_blank"><img
-                     src="assets/icons/youtube_icon.svg" alt=""
-                     class="social-icon hover:dark:white-filter hover:black-filter hover:opacity-100"></a>
-            </div>
-            <h1>Hi, I'm <span class="text-mainPurpleDark dark:text-white">Carl</span> <span
-                  class="text-opacity-100 text-white" id="wave">👋</span></h1>
-            <h1 class="text-3xl py-5"><span class="text-mainPurple dark:text-white">UI/UX
-                  Designer</span> and
-               <span class="text-mainPurple dark:text-white">Software Developer</span> from Hamburg
-            </h1>
-            <p class="font-rubikRegular text-textGray dark:text-white text-2xl text-center">
-               I realised one thing relatively early on: Good design does not work without good
-               programming and vice versa. I am currently studying <a
-                  href="https://www.inf.uni-hamburg.de/en/inst/ab/hci.html"
-                  class="font-rubikMedium text-mainPurpleSat">Human-Computer-Interaction</a> at the University of
+        </div>
+        <main class="max-w-6xl mx-auto px-10">
+            <!--Main outer gutter-->
+            <section id="profile-sec">
+                <!--Profile section-->
+                <div>
+                    <div class="relative mx-auto w-80 pt-14">
+                        <div class="absolute bg-mainPurpleDark dark:bg-darkModeBg opacity-30 h-52 w-full bottom-0 -z-20 blur-3xl" id="portrait-bg"></div>
+                        <div class="relative overflow-hidden" style="border-bottom-left-radius: 104px; border-bottom-right-radius: 104px;">
+                            <div class="absolute bg-mainPurpleDark dark:bg-white opacity-10 w-full h-52 bottom-0 -z-10" style="border-radius: 104px;"></div>
+                            <img id="portrait" src="assets/carl_portrait.png" alt="Carl Portrait">
+                        </div>
+                    </div>
+                    <div class="grid col-span-3 grid-flow-col row-span-1 w-44 mx-auto pt-14 gap-3">
+                        <!--Icons-->
+                        <a id="social-icon" href="https://github.com/Tohr01" target="_blank">
+                            <img src="assets/icons/github_mark_app.svg" alt="Github Logo" class="social-icon dark:hover:white-filter hover:black-filter hover:opacity-100">
+                        </a>
+                        <a id="social-icon" href="https://www.linkedin.com/in/carl-raabe-922aaa250/" target="_blank">
+                            <img src="assets/icons/linkedin_icon.svg" alt="" class="social-icon hover:dark:white-filter hover:black-filter hover:opacity-100">
+                        </a>
+                        <a id="social-icon" href="https://www.youtube.com/channel/UCNzGXn20hRdyVwUFZw5Mf0w" target="_blank">
+                            <img src="assets/icons/youtube_icon.svg" alt="" class="social-icon hover:dark:white-filter hover:black-filter hover:opacity-100">
+                        </a>
+                    </div>
+                    <h1>Hi, I'm
+                        <span class="text-mainPurpleDark dark:text-white">Carl</span>
+                        <span class="text-opacity-100 text-white" id="wave">👋</span>
+                    </h1>
+                    <h1 class="text-3xl py-5">
+                        <span class="text-mainPurple dark:text-white">
+                            UI/UX
+                  Designer
+                        </span>
+                        and
+                        <span class="text-mainPurple dark:text-white">Software Developer</span>
+                        from Hamburg
+                    </h1>
+                    <p class="font-rubikRegular text-textGray dark:text-white text-2xl text-center">
+                        I realised one thing relatively early on: Good design does not work without good
+               programming and vice versa. I am currently studying
+                        <a href="https://www.inf.uni-hamburg.de/en/inst/ab/hci.html" class="font-rubikMedium text-mainPurpleSat">Human-Computer-Interaction</a>
+                        at the University of
                Hamburg and am specialising in the optimal interaction of user interface and programming.
                programming. Below you will find some of the projects I have designed and programmed over the years.
-            </p>
-         </div>
-      </section>
-      <section>
-         <!--Skill section-->
-         <h1>My <span class="text-mainPurpleDark dark:text-white">Skills</span></h1>
-         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 grid-flow-row gap-4 place-content-center pt-14">
-            <div class="skill-container group">
-               <div class="skill-icon-container">
-                  <img src="assets/icons/swift_icon.svg" alt="Swift Logo" class="skill-icon group-hover:filter-none">
-               </div>
-               <p class="skill-name">Swift</p>
-            </div>
-            <div class="skill-container group">
-               <div class="skill-icon-container">
-                  <img src="assets/icons/python_logo.svg" alt="Python Logo" class="skill-icon group-hover:filter-none">
-               </div>
-               <p class="skill-name">Python</p>
-            </div>
-            <div class="skill-container group">
-               <div class="skill-icon-container">
-                  <img src="assets/icons/javascript_logo.svg" alt="JavaScript Logo"
-                     class="skill-icon group-hover:filter-none">
-               </div>
-               <p class="skill-name">JavaScript</p>
-            </div>
-            <div class="skill-container group">
-               <div class="skill-icon-container">
-                  <img src="assets/icons/git_icon.svg" alt="Git Logo" class="skill-icon group-hover:filter-none">
-               </div>
-               <p class="skill-name">Git</p>
-            </div>
-            <div class="skill-container group">
-               <div class="skill-icon-container">
-                  <img src="assets/icons/tailwind_icon.svg" alt="Tailwind Logo"
-                     class="skill-icon group-hover:filter-none">
-               </div>
-               <p class="skill-name">Tailwind</p>
-            </div>
-            <div class="skill-container group">
-               <div class="skill-icon-container">
-                  <img src="assets/icons/creative_cloud.svg" alt="Adobe Creative Cloud Logo"
-                     class="skill-icon group-hover:filter-none">
-               </div>
-               <p class="skill-name">Adobe CC</p>
-            </div>
-         </div>
-      </section>
-      <section id="my-projects">
-         <!--Projects section-->
-         <h1>My <span class="text-mainPurpleDark dark:text-white" id="my-projects">Projects</span>
-         </h1>
-         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-row pt-14 gap-5">
-            <a href="backupschedule/index.html" target="_self" class="relative group project-container">
-               <div class="project-text-hover">
-                  <p class="project-desc-text">
-                     An application allowing finegrained custom scheduling of Time Machine Backups and some other useful
+                    </p>
+                </div>
+            </section>
+            <section>
+                <!--Skill section-->
+                <h1>My
+                    <span class="text-mainPurpleDark dark:text-white">Skills</span>
+                </h1>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 grid-flow-row gap-4 place-content-center pt-14">
+                    <div class="skill-container group">
+                        <div class="skill-icon-container">
+                            <img src="assets/icons/swift_icon.svg" alt="Swift Logo" class="skill-icon group-hover:filter-none">
+                        </div>
+                        <p class="skill-name">Swift</p>
+                    </div>
+                    <div class="skill-container group">
+                        <div class="skill-icon-container">
+                            <img src="assets/icons/python_logo.svg" alt="Python Logo" class="skill-icon group-hover:filter-none">
+                        </div>
+                        <p class="skill-name">Python</p>
+                    </div>
+                    <div class="skill-container group">
+                        <div class="skill-icon-container">
+                            <img src="assets/icons/javascript_logo.svg" alt="JavaScript Logo" class="skill-icon group-hover:filter-none">
+                        </div>
+                        <p class="skill-name">JavaScript</p>
+                    </div>
+                    <div class="skill-container group">
+                        <div class="skill-icon-container">
+                            <img src="assets/icons/git_icon.svg" alt="Git Logo" class="skill-icon group-hover:filter-none">
+                        </div>
+                        <p class="skill-name">Git</p>
+                    </div>
+                    <div class="skill-container group">
+                        <div class="skill-icon-container">
+                            <img src="assets/icons/tailwind_icon.svg" alt="Tailwind Logo" class="skill-icon group-hover:filter-none">
+                        </div>
+                        <p class="skill-name">Tailwind</p>
+                    </div>
+                    <div class="skill-container group">
+                        <div class="skill-icon-container">
+                            <img src="assets/icons/creative_cloud.svg" alt="Adobe Creative Cloud Logo" class="skill-icon group-hover:filter-none">
+                        </div>
+                        <p class="skill-name">Adobe CC</p>
+                    </div>
+                </div>
+            </section>
+            <section id="my-projects">
+                <!--Projects section-->
+                <h1>My
+                    <span class="text-mainPurpleDark dark:text-white" id="my-projects">Projects</span>
+                </h1>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-flow-row pt-14 gap-5">
+                    <a href="backupschedule/index.html" target="_self" class="relative group project-container">
+                        <div class="project-text-hover">
+                            <p class="project-desc-text">
+                                An application allowing finegrained custom scheduling of Time Machine Backups and some other useful
                      Time Machine utilities
-                  </p>
-               </div>
-               <div class="group-hover:opacity-50">
-                  <img src="assets/icons/backup_schedule_icon.png" alt="Backup schedule icon" class="app-icon">
-                  <p class="project-name">BackupSchedule</p>
-                  <div class="flex items-center justify-center pt-2">
-                     <img src="assets/icons/swift_icon.svg" alt="Swift icon" class="project-lang-icon">
-                     <p class="dark:text-white">•</p>
-                     <p class="ml-2 font-rubikMedium dark:text-white">macOS</p>
-                  </div>
-               </div>
-            </a>
-            <a href="https://github.com/Tohr01/PassWord" target="_self" class="relative group project-container">
-               <div class="project-text-hover">
-                  <p class="project-desc-text">
-                     This project aims to restore the memorable password feature removed from Keychain Access in macOS
+                            </p>
+                        </div>
+                        <div class="group-hover:opacity-50">
+                            <img src="assets/icons/backup_schedule_icon.png" alt="Backup schedule icon" class="app-icon">
+                            <p class="project-name">BackupSchedule</p>
+                            <div class="flex items-center justify-center pt-2">
+                                <img src="assets/icons/swift_icon.svg" alt="Swift icon" class="project-lang-icon">
+                                <p class="dark:text-white">•</p>
+                                <p class="ml-2 font-rubikMedium dark:text-white">macOS</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Tohr01/PassWord" target="_self" class="relative group project-container">
+                        <div class="project-text-hover">
+                            <p class="project-desc-text">
+                                This project aims to restore the memorable password feature removed from Keychain Access in macOS
                      10.15
-               </div>
-               <div class="group-hover:opacity-50">
-                  <img src="assets/icons/password_app_icon.png" alt="Placeholder app icon" class="app-icon">
-                  <p class="project-name">PassWord</p>
-                  <div class="flex items-center justify-center pt-2">
-                     <img src="assets/icons/swift_icon.svg" alt="HTML icon" class="project-lang-icon">
-                     <p class="dark:text-white">•</p>
-                     <p class="ml-2 font-rubikMedium dark:text-white">macOS</p>
-                  </div>
-               </div>
-            </a>
-            <a href="https://pixeldogs.de/jupdf/" target="_self" class="relative group project-container">
-               <div class="project-text-hover">
-                  <p class="project-desc-text">
-                     Upload your Jupyter Notebooks and JuPDF converts them to one long single page PDF
-                  </p>
-               </div>
-               <div class="group-hover:opacity-50">
-                  <img src="assets/icons/placeholder_app_icon.png" alt="Placeholder app icon" class="app-icon">
-                  <p class="project-name">JuPDF</p>
-                  <div class="flex items-center justify-center pt-2">
-                     <img src="assets/icons/html_icon.svg" alt="HTML icon" class="project-lang-icon">
-                     <img src="assets/icons/javascript_logo.svg" alt="Javascript icon" class="project-lang-icon">
-                     <img src="assets/icons/tailwind_icon.svg" alt="Tailwind icon" class="project-lang-icon">
-                     <img src="assets/icons/python_logo.svg" alt="Python icon" class="project-lang-icon">
-                     <p class="dark:text-white">•</p>
-                     <p class="ml-2 font-rubikMedium dark:text-white">Web App</p>
-                  </div>
-               </div>
-            </a>
-         </div>
-         <a href="https://github.com/Tohr01" target="_blank"
-            class="flex justify-center items-center group cursor-pointer pt-10">
-            <img src="assets/icons/github_mark.svg" alt="" class="dark:white-filter pr-2 w-7">
-            <p class="text-black dark:text-white font-rubikMedium text-lg group-hover:underline">View more on GitHub</p>
-         </a>
-      </section>
-      <section>
-         <!--My certs/awards-->
-         <h1 class="pt-32">My <span class="text-mainPurpleDark dark:text-white" id="my-certs"> Awards</span></h1>
-         <div class="pt-14 grid grid-cols-1 grid-rows-1">
-            <a href="assets/jugend_forscht_certs.pdf" target="_blank"
-               class="bg-rectangle dark:bg-darkRectangle rounded-2xl flex flex-col lg:flex-row p-10 group hover:scale-105 transition-all relative overflow-hidden">
-               <div href=""
-                  class="absolute bottom-0 right-0 w-20 h-20 bg-mainPurple dark:bg-white rounded-tl-full place-content-center">
-                  <p
-                     class="text-center font-rubikBold text-rectangle dark:text-darkRectangle translate-x-2 translate-y-2">
-                     PDF</p>
-               </div>
-               <img
-                  class="w-24 lg:mr-10 black-filter dark:white-filter group-hover:filter-none transition-all pb-8 lg:pb-0 mx-auto"
-                  src="assets/icons/jugend_forscht.svg" alt="JugendForscht Logo">
-               <div class="place-content-center text-center lg:text-left">
-                  <p class="font-rubikMedium text-2xl dark:text-white pb-3">JugendForscht</p>
-                  <p class="font-rubik dark:text-white text-2xl">
-                     As part of JugendForscht 2019, I have developed a quiz app for digital education.
+                            </div>
+                            <div class="group-hover:opacity-50">
+                                <img src="assets/icons/password_app_icon.png" alt="Placeholder app icon" class="app-icon">
+                                <p class="project-name">PassWord</p>
+                                <div class="flex items-center justify-center pt-2">
+                                    <img src="assets/icons/swift_icon.svg" alt="HTML icon" class="project-lang-icon">
+                                    <p class="dark:text-white">•</p>
+                                    <p class="ml-2 font-rubikMedium dark:text-white">macOS</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://pixeldogs.de/jupdf/" target="_self" class="relative group project-container">
+                            <div class="project-text-hover">
+                                <p class="project-desc-text">
+                                    Upload your Jupyter Notebooks and JuPDF converts them to one long single page PDF
+                                </p>
+                            </div>
+                            <div class="group-hover:opacity-50">
+                                <img src="assets/icons/placeholder_app_icon.png" alt="Placeholder app icon" class="app-icon">
+                                <p class="project-name">JuPDF</p>
+                                <div class="flex items-center justify-center pt-2">
+                                    <img src="assets/icons/html_icon.svg" alt="HTML icon" class="project-lang-icon">
+                                    <img src="assets/icons/javascript_logo.svg" alt="Javascript icon" class="project-lang-icon">
+                                    <img src="assets/icons/tailwind_icon.svg" alt="Tailwind icon" class="project-lang-icon">
+                                    <img src="assets/icons/python_logo.svg" alt="Python icon" class="project-lang-icon">
+                                    <p class="dark:text-white">•</p>
+                                    <p class="ml-2 font-rubikMedium dark:text-white">Web App</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="https://github.com/Tohr01" target="_blank" class="flex justify-center items-center group cursor-pointer pt-10">
+                        <img src="assets/icons/github_mark.svg" alt="" class="dark:white-filter pr-2 w-7">
+                        <p class="text-black dark:text-white font-rubikMedium text-lg group-hover:underline">View more on GitHub</p>
+                    </a>
+                </section>
+                <section>
+                    <!--My certs/awards-->
+                    <h1 class="pt-32">My
+                        <span class="text-mainPurpleDark dark:text-white" id="my-certs"> Awards</span>
+                    </h1>
+                    <div class="pt-14 grid grid-cols-1 grid-rows-1">
+                        <a href="assets/jugend_forscht_certs.pdf" target="_blank" class="bg-rectangle dark:bg-darkRectangle rounded-2xl flex flex-col lg:flex-row p-10 group hover:scale-105 transition-all relative overflow-hidden">
+                            <div href="" class="absolute bottom-0 right-0 w-20 h-20 bg-mainPurple dark:bg-white rounded-tl-full place-content-center">
+                                <p class="text-center font-rubikBold text-rectangle dark:text-darkRectangle translate-x-2 translate-y-2">
+                                    PDF
+                                </p>
+                            </div>
+                            <img class="w-24 lg:mr-10 black-filter dark:white-filter group-hover:filter-none transition-all pb-8 lg:pb-0 mx-auto" src="assets/icons/jugend_forscht.svg" alt="JugendForscht Logo">
+                            <div class="place-content-center text-center lg:text-left">
+                                <p class="font-rubikMedium text-2xl dark:text-white pb-3">JugendForscht</p>
+                                <p class="font-rubik dark:text-white text-2xl">
+                                    As part of JugendForscht 2019, I have developed a quiz app for digital education.
                      I won both the regional regional and state competition.
-                     I also received the special prize from the Hamburg school senator.</p>
-               </div>
-            </a>
-         </div>
-      </section>
-      <footer class="py-12 max-w-5xl mx-auto">
-         <div
-            class="grid grid-rows-2 mx-auto text-center font-rubikBold text-xl pt-5 dark:text-white dark:text-opacity-50">
-            <a id="mail" class="text-mainPurpleDark font-rubikBold text-center text-2xl dark:text-white pb-5">Please
+                     I also received the special prize from the Hamburg school senator.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+                <footer class="py-12 max-w-5xl mx-auto">
+                    <div class="grid grid-rows-2 mx-auto text-center font-rubikBold text-xl pt-5 dark:text-white dark:text-opacity-50">
+                        <a id="mail" class="text-mainPurpleDark font-rubikBold text-center text-2xl dark:text-white pb-5">
+                            Please
                enable JavaScript to see the email address
-            </a>
-            <a href="" class="opacity-25">imprint</a>
-         </div>
-      </footer>
-   </main>
-</body>
-
-</html>
+                        </a>
+                        <a href="" class="opacity-25">imprint</a>
+                    </div>
+                </footer>
+            </main>
+        </body>
+    </html>
