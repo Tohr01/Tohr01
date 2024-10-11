@@ -1,8 +1,17 @@
 #!/usr/bin/env bash
-cd "$(dirname "$0")"
 
-npx tailwindcss -i index-src.css -o index-dist.css --watch --minify &
-npx tailwindcss -i backupschedule/index-src.css -o backupschedule/index-dist.css --watch --minify &
-npx tailwindcss -i templates/navigation-src.css -o  templates/navigation-dist.css --watch --minify
+tailwind_watcher_scripts=("backupschedule/tailwind-watch.sh" "templates/tailwind-watch.sh" "tailwind-watch.sh");
+function cleanupScreens() {
+    echo "Quitting screens";
+    # https://stackoverflow.com/a/12907609
+    screen -ls | awk -vFS='\t|[.]' '/tailwind/ {system("screen -S "$2" -X quit")}';
+}
 
-wait
+cd "$(dirname "$0")";
+for script in "${tailwind_watcher_scripts[@]}"; do
+    echo "Starting screen with runner script: $script";
+    screen -dm -S "tailwind" bash "$script";
+done
+
+trap cleanupScreens EXIT
+while true; do sleep 86400; done

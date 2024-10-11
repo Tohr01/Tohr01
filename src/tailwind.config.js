@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "**/*.{html,js}",
+    "*.{html,js}",
     "!node_modules"
   ],
   theme: {
@@ -13,10 +13,6 @@ module.exports = {
         rubik: ['Rubik-Regular', 'sans-serif']
       },
       colors: {
-        // BackupSchedule
-        'bsGreen': '#3C817A',
-        'bsGray': '#2F4146',
-        'bsPurple': '#9b59b6',
         'textGray': '#838383',
         'mainPurple': '#686DE0',
         'mainPurpleSat': '#8588c2',
@@ -36,12 +32,6 @@ module.exports = {
       },
       boxShadow: {
           'default': '0 3px 20px rgba(0,0,0,0.14)' 
-      },
-      borderWidth: {
-        '3': '3px'
-      },
-      textDecorationThickness: {
-        '6': '6px'
       }
     },
   }

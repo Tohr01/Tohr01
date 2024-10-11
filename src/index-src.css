@@ -31,8 +31,6 @@
         @apply w-12 h-12 border-mainPurpleSat border-8 rounded-2xl absolute opacity-10 dark:border-white
     }
 
-
-
     /* Shadow styles */
     .text-shadow {
         text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);

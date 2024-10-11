@@ -28,10 +28,10 @@
 @layer components {
     /* Animation rectangle style */
     .anim-rect {
-        @apply w-12 h-12 border-mainPurple border-8 rounded-2xl
+        @apply w-12 h-12 border-gray-300 border-8 rounded-2xl
     }
     
     .nav-text {
-        @apply text-mainPurple font-rubikSemiBold text-2xl my-auto hover:underline decoration-2 mr-10
+        @apply text-gray-300 font-rubikSemiBold text-2xl my-auto hover:underline decoration-2 mr-10
     }
 }
