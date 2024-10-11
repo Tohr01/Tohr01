@@ -5,16 +5,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Imprint</title>
         <link rel="stylesheet" href="index-dist.css">
+        <script src="scripts/email.js"></script>
     </head>
     <body class="bg-dots dark:bg-dots-dark dark:bg-darkModeBgDark">
-        <main>
-            <h1 class="text-left !pt-0 !pb-10">imprint</h1>
-            <p class="text-white font-rubikSemiBold text-2xl" style="line-height: 150%;">
-                Kratz&Raabe GbR<br>
-                Design und Verlag<br>
-                König-Heinrich-Weg 47<br>
-                22459 Hamburg
-            </p>
+        <!--Navigation-->
+        <iframe class="absolute w-full dark:white-filter" src="/templates/navigation.html" frameborder="0"></iframe>
+        <main class="py-32 flex items-center flex-col justify-center h-screen">
+            <div class="relative inline-block">
+                <div class="absolute w-full h-full bg-white dark:bg-darkModeBgDark blur-2xl -z-10"></div>
+                <div class="p-16">
+                    <h1 class="!pt-0 !pb-10">imprint</h1>
+                    <p style="line-height: 150%;">
+                        Carl Raabe
+                        <br>
+                        <a id="mail">Please enable JavaScript to see the email address</a>
+                        <br>
+                        König-Heinrich-Weg 47
+                        <br>
+                        22459 Hamburg
+                    </p>
+                </div>
+            </div>
         </main>
     </body>
 </html>
