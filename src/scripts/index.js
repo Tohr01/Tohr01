@@ -209,6 +209,7 @@ window.addEventListener('mousemove', (e) => {
 });
 
 function respawnRects() {
+    if (isTouchDevice()) return;
     gsap.to('.anim-rect', {
         duration: 0.5,
         opacity: 0,
@@ -226,3 +227,10 @@ window.addEventListener('resize', () => {
     clearTimeout(timeout_id);
     timeout_id = setTimeout(respawnRects, 1000);
 });
+
+// Taken from https://stackoverflow.com/a/4819886
+function isTouchDevice() {
+    return (('ontouchstart' in window) ||
+       (navigator.maxTouchPoints > 0) ||
+       (navigator.msMaxTouchPoints > 0));
+}

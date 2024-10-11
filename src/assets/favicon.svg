@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 1024 1024">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-2 {
+        filter: url(#drop-shadow-2);
+      }
+
+      .cls-3 {
+        font-size: 692.8px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #686de0;
+        font-family: Rubik-Bold, Rubik;
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        font-size: 707.5px;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="14"/>
+      <feFlood flood-color="#1d1d1b" flood-opacity=".8"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="drop-shadow-2" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-2" stdDeviation="24"/>
+      <feFlood flood-color="#1d1d1b" flood-opacity=".5"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.6.0, SVG Export Plug-In . SVG Version: 1.2.0 Build 709)  -->
+  <g>
+    <g id="Ebene_1">
+      <g class="cls-1">
+        <path class="cls-5" d="M31,512C31,156.6,161.4,26.3,516.7,26.3s485.7,130.4,485.7,485.7h0c0,355.4-130.4,485.7-485.7,485.7S31,867.4,31,512"/>
+      </g>
+      <g class="cls-2">
+        <text class="cls-3" transform="translate(164.6 693.9)"><tspan x="0" y="0">c</tspan></text>
+        <text class="cls-4" transform="translate(556.1 700.9)"><tspan x="0" y="0">r</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
