@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     "*.{html,js}",
+    "scripts/index.js",
     "!node_modules"
   ],
   theme: {

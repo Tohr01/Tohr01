@@ -72,7 +72,6 @@ let animationRectsOrigins;
 function generateAnimatedRectangles() {
     const pointsContainerBbox = pointsContainer.getBoundingClientRect();
 
-
     // Calculate width of cells
     const cellWidth = pointsContainerBbox.width / (GRID_COLS + 1);
     const cellHeight = pointsContainerBbox.height / (GRID_ROWS + 1);
@@ -147,7 +146,7 @@ function interceptsElem(px, py, x1, y1, x2, y2) {
 }
 
 function eucDist(x, y) {
- return Math.sqrt(Math.pow(x, 2), Math.pow(y, 2));
+    return Math.sqrt(Math.pow(x, 2), Math.pow(y, 2));
 }
 
 function intBetweenInterval(min, max) {
