@@ -108,7 +108,7 @@
     }
 
     .project-desc-text {
-        @apply text-center px-14 font-rubikSemiBold dark:text-white scale-125 group-hover:scale-100 transition-all text-lg
+        @apply text-center px-14 font-rubikSemiBold dark:text-white scale-125 group-hover:scale-100 transition-all text-base
     }
 
     .project-lang-icon {
