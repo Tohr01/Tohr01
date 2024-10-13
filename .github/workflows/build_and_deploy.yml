@@ -17,7 +17,8 @@ jobs:
         node-version: 20
         cache: 'npm'
     - working-directory: ./src
-    - run: | 
+    - name: Install dependencies
+      run: | 
         echo $PWD
         npm install
         npm run build
