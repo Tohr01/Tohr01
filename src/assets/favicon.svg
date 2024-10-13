@@ -1,46 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 1024 1024">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024">
   <defs>
     <style>
       .cls-1 {
-        filter: url(#drop-shadow-1);
+        font-size: 724.9px;
       }
 
-      .cls-2 {
-        font-size: 519.3px;
-      }
-
-      .cls-2, .cls-3 {
-        fill: #686de0;
+      .cls-1, .cls-2 {
+        fill: #fff;
         font-family: Rubik-Bold, Rubik;
         font-weight: 700;
       }
 
-      .cls-4 {
-        fill: #fff;
+      .cls-2 {
+        font-size: 740.3px;
       }
 
       .cls-3 {
-        font-size: 530.4px;
+        fill: #686de0;
       }
     </style>
-    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
-      <feOffset dx="0" dy="0"/>
-      <feGaussianBlur result="blur" stdDeviation="14"/>
-      <feFlood flood-color="#1d1d1b" flood-opacity=".8"/>
-      <feComposite in2="blur" operator="in"/>
-      <feComposite in="SourceGraphic"/>
-    </filter>
   </defs>
   <!-- Generator: Adobe Illustrator 28.6.0, SVG Export Plug-In . SVG Version: 1.2.0 Build 709)  -->
   <g>
     <g id="Ebene_1">
-      <g class="cls-1">
-        <path class="cls-4" d="M31,512C31,156.6,161.4,26.3,516.7,26.3s485.7,130.4,485.7,485.7h0c0,355.4-130.4,485.7-485.7,485.7S31,867.4,31,512"/>
-      </g>
+      <path class="cls-3" d="M31,512C31,156.6,161.4,26.3,516.7,26.3s485.7,130.4,485.7,485.7h0c0,355.4-130.4,485.7-485.7,485.7S31,867.4,31,512"/>
       <g>
-        <text class="cls-2" transform="translate(252.8 641.5)"><tspan x="0" y="0">c</tspan></text>
-        <text class="cls-3" transform="translate(546.3 646.7)"><tspan x="0" y="0">r</tspan></text>
+        <text class="cls-1" transform="translate(142.7 709.8)"><tspan x="0" y="0">c</tspan></text>
+        <text class="cls-2" transform="translate(552.4 717.1)"><tspan x="0" y="0">r</tspan></text>
       </g>
     </g>
   </g>
