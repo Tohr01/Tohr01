@@ -8,7 +8,7 @@
         <meta name="og:title" content="Carl Raabe - UI/UX Designer and Software Developer">
         <meta name="og:type" content="website">
         <meta name="og:url" content="https://cr.codes/">
-        <meta name="og:image" content="https://cr.codes/assets/og_image_index.png">        
+        <meta name="og:image" content="https://cr.codes/assets/og_image_index.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index-dist.css">
         <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -19,11 +19,9 @@
         <script src="scripts/email.js"></script>
     </head>
     <body class="dark:bg-darkModeBgDark">
-        <div class="h-screen w-screen relative" id="points-container">
+        <div class="min-w-72 w-screen relative" id="points-container">
             <!--Points container-->
-            <div class="absolute bg-dots dark:bg-dots-dark -z-20 w-full h-full" id="bg-dots">
-                <img class="absolute place-content-center w-10 bottom-10 left-1/2 -translate-x-1/2 opacity-50 animate-bounce purple-sat-filter dark:white-filter" src="assets/icons/download_arrow.svg" alt="Scroll down arrow">
-            </div>
+            <div class="absolute bg-dots dark:bg-dots-dark -z-20 w-full h-full" id="bg-dots"></div>
             <div class="h-screen mx-5 grid grid-cols-1 place-content-center">
                 <!--Rect safe area-->
                 <div class="relative m-auto" style="border-radius: 100px;" id="title-container">
@@ -33,6 +31,7 @@
                     </p>
                 </div>
             </div>
+            <img class="w-10 mx-auto absolute place-content-center left-0 right-0 bottom-10 text-center opacity-50 animate-bounce purple-sat-filter dark:white-filter" src="assets/icons/download_arrow.svg" alt="Scroll down arrow">
         </div>
         <main class="max-w-6xl mx-auto px-10">
             <!--Main outer gutter-->
@@ -52,33 +51,34 @@
                             <img src="assets/icons/github_mark_app.svg" alt="Github Logo" class="social-icon dark:hover:white-filter hover:black-filter hover:opacity-100">
                         </a>
                         <a id="social-icon" href="https://www.linkedin.com/in/carl-raabe-922aaa250/" target="_blank">
-                            <img src="assets/icons/linkedin_icon.svg" alt="" class="social-icon hover:dark:white-filter hover:black-filter hover:opacity-100">
+                            <img src="assets/icons/linkedin_icon.svg" alt="LinkedIn Logo" class="social-icon hover:dark:white-filter hover:black-filter hover:opacity-100">
                         </a>
                         <a id="social-icon" href="https://www.youtube.com/channel/UCNzGXn20hRdyVwUFZw5Mf0w" target="_blank">
-                            <img src="assets/icons/youtube_icon.svg" alt="" class="social-icon hover:dark:white-filter hover:black-filter hover:opacity-100">
+                            <img src="assets/icons/youtube_icon.svg" alt="Youtube Logo" class="social-icon hover:dark:white-filter hover:black-filter hover:opacity-100">
                         </a>
                     </div>
-                    <h1>
+                    <h1 class="pb-5">
                         Hi, I'm
                         <span class="text-mainPurpleDark dark:text-white">Carl</span>
                         <span class="text-opacity-100 text-white" id="wave">👋</span>
-                    </h1>
-                    <h1 class="text-3xl py-5">
-                        <span class="text-mainPurple dark:text-white">
-                            UI/UX
-                  Designer
+                        <br>
+                        <span class="text-3xl">
+                            <span class="text-mainPurple dark:text-white">
+                                UI/UX
+                            Designer
+                            </span>
+                            and
+                            <span class="text-mainPurple dark:text-white">Software Developer</span>
+                            from Hamburg
                         </span>
-                        and
-                        <span class="text-mainPurple dark:text-white">Software Developer</span>
-                        from Hamburg
                     </h1>
                     <p>
                         I realised one thing relatively early on: Good design does not work without good
-               programming and vice versa. I am currently studying
+                    programming and vice versa. I am currently studying
                         <a href="https://www.inf.uni-hamburg.de/en/inst/ab/hci.html" class="font-rubikMedium text-mainPurpleSat">Human-Computer-Interaction</a>
                         at the University of
-               Hamburg and am specialising in the optimal interaction of user interface and programming.
-               programming. Below you will find some of the projects I have designed and programmed over the years.
+                    Hamburg and am specialising in the optimal interaction of user interface and programming.
+                    programming. Below you will find some of the projects I have designed and programmed over the years.
                     </p>
                 </div>
             </section>
@@ -137,8 +137,9 @@
                     <a href="backupschedule/index.html" target="_self" class="relative group project-container">
                         <div class="project-text-hover">
                             <p class="project-desc-text">
-                                An application allowing finegrained custom scheduling of Time Machine Backups and some other useful
-                     Time Machine utilities
+                                An application allowing finegrained custom scheduling of Time Machine Backups and some other
+                            useful
+                            Time Machine utilities
                             </p>
                         </div>
                         <div class="group-hover:opacity-30">
@@ -154,7 +155,8 @@
                     <a href="https://github.com/Tohr01/PassWord" target="_blank" class="relative group project-container">
                         <div class="project-text-hover">
                             <p class="project-desc-text">
-                                This project aims to restore the memorable password feature removed from Keychain Access in macOS 10.15
+                                This project aims to restore the memorable password feature removed from Keychain Access in
+                            macOS 10.15
                             </div>
                             <div class="group-hover:opacity-30">
                                 <img src="assets/icons/password_app_icon.png" alt="Placeholder app icon" class="app-icon">
@@ -188,8 +190,10 @@
                         </a>
                     </div>
                     <a href="https://github.com/Tohr01" target="_blank" class="flex justify-center items-center group cursor-pointer pt-10">
-                        <img src="assets/icons/github_mark.svg" alt="" class="dark:white-filter pr-2 w-7">
-                        <p class="text-black dark:text-white font-rubikMedium text-lg group-hover:underline">View more on GitHub</p>
+                        <img src="assets/icons/github_mark.svg" alt="Github Logo" class="dark:white-filter pr-2 w-7">
+                        <p class="text-black dark:text-white font-rubikMedium text-lg group-hover:underline">
+                            View more on GitHub
+                        </p>
                     </a>
                 </section>
                 <section>
@@ -210,8 +214,8 @@
                                 <p class="award-title">JugendForscht</p>
                                 <p class="award-desc">
                                     As part of JugendForscht 2019, I have developed a quiz app for digital education.
-                     I won both the regional regional and state competition.
-                     I also received the special prize from the Hamburg school senator.
+                            I won both the regional regional and state competition.
+                            I also received the special prize from the Hamburg school senator.
                                 </p>
                             </div>
                         </a>
