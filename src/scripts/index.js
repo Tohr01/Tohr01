@@ -70,6 +70,7 @@ let animationRects;
 let animationRectsOrigins;
 
 function generateAnimatedRectangles() {
+    if (isTouchDevice()) return;
     const pointsContainerBbox = pointsContainer.getBoundingClientRect();
 
     // Calculate width of cells
