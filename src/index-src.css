@@ -71,7 +71,7 @@
     }
 
     .skill-name {
-        @apply text-center font-rubikMedium pt-3 text-2xl dark:text-white
+        @apply text-center font-rubikMedium pt-3 text-2xl text-black dark:text-white
     }
 
     .text-shadow-light {
@@ -100,7 +100,11 @@
     }
 
     .project-name {
-        @apply text-center font-rubikMedium text-2xl pt-3 dark:text-white
+        @apply text-center font-rubikMedium text-2xl pt-3 text-black dark:text-white
+    }
+
+    .project-platform {
+        @apply ml-2 font-rubikMedium text-black dark:text-white text-lg
     }
 
     .app-icon {
@@ -108,13 +112,21 @@
     }
 
     .project-desc-text {
-        @apply text-center px-14 font-rubikSemiBold dark:text-white scale-125 group-hover:scale-100 transition-all text-base
+        @apply text-center px-14 font-rubikSemiBold text-black dark:text-white scale-125 group-hover:scale-100 transition-all text-base
     }
 
     .project-lang-icon {
         @apply mr-2 w-4 black-filter dark:white-filter
     }
 
+    /* My certs/awards */
+    .award-title {
+        @apply text-left font-rubikMedium text-2xl text-black dark:text-white pb-3
+    }
+
+    .award-desc {
+        @apply text-left text-black dark:text-white text-2xl
+    }
 
     /* Filter  */
     .grey-filter {
