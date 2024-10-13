@@ -16,10 +16,9 @@ jobs:
         cache-dependency-path: src/package-lock.json
         node-version: 20
         cache: 'npm'
-    - working-directory: ./src
-    - name: Install dependencies
-      run: | 
+    - run: | 
         echo $PWD
         npm install
         npm run build
         ls
+      working-directory: ./src
