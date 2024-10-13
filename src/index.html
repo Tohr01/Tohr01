@@ -19,11 +19,9 @@
         <script src="scripts/email.js"></script>
     </head>
     <body class="dark:bg-darkModeBgDark">
-        <div class="h-screen w-screen relative" id="points-container">
+        <div class="min-w-72 w-screen relative" id="points-container">
             <!--Points container-->
-            <div class="absolute bg-dots dark:bg-dots-dark -z-20 w-full h-full" id="bg-dots">
-                <img class="absolute place-content-center w-10 bottom-10 left-1/2 -translate-x-1/2 opacity-50 animate-bounce purple-sat-filter dark:white-filter" src="assets/icons/download_arrow.svg" alt="Scroll down arrow">
-            </div>
+            <div class="absolute bg-dots dark:bg-dots-dark -z-20 w-full h-full" id="bg-dots"></div>
             <div class="h-screen mx-5 grid grid-cols-1 place-content-center">
                 <!--Rect safe area-->
                 <div class="relative m-auto" style="border-radius: 100px;" id="title-container">
@@ -33,6 +31,7 @@
                     </p>
                 </div>
             </div>
+            <img class="w-10 mx-auto absolute place-content-center left-0 right-0 bottom-10 text-center opacity-50 animate-bounce purple-sat-filter dark:white-filter" src="assets/icons/download_arrow.svg" alt="Scroll down arrow">
         </div>
         <main class="max-w-6xl mx-auto px-10">
             <!--Main outer gutter-->
