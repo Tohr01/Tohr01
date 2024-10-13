@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  build:
+  deploy-and-build:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,10 +18,8 @@ jobs:
         cache: 'npm'
     - name: Install dependencies
       run: | 
-        echo $PWD
         npm install
         npm run build
-        ls
       working-directory: ./src
     - name: Deploy to SFTP server
       uses: wlixcc/SFTP-Deploy-Action@v1.2.4
