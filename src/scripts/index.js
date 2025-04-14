@@ -1,3 +1,11 @@
+/*
+Down arrow button on title page onclick animation
+ */
+
+const downArrowBtn = document.getElementById('down-arrow-btn');
+downArrowBtn.addEventListener('click', () => {
+    gsap.to(window, { duration: 1, scrollTo: '#profile-sec', ease: 'power4.out' })
+});
 
 /*
 Profile photo animation

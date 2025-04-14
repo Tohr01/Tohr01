@@ -1,0 +1,7 @@
+session_name: Tohr01 Workspace
+windows:
+- window_name: build
+  panes:
+    - shell_command:
+        - cd src
+        - npx tailwindcss -i index-src.css -o index-dist.css --watch --minify
